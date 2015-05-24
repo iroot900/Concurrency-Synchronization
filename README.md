@@ -1,6 +1,6 @@
 # Concurrency-Synchronization
 
-In this repository are some classic problems/solutions regarding multi-thread, with an application on Matrx Multiplication:
+In this repository are some classic problems/solutions regarding multi-thread, with an application on Matrix Multiplication:
 
 Reader-Writer Problem: Mutex Solution / RWLOCK Solution
 
@@ -20,5 +20,4 @@ options:
 
 -t : size of matrix,deafult 5000x5000
 
-Tested on Mac Pro, single thread is actullay faster, given computers with more processors, multi-thread should outpefrom.
-Matrix Multiplication could be perfectly split into many pieces, it's naturally to do it in multi-thread.
+Tested on Mac Pro, single thread is actullay faster, which is not a surprise since pthread is user-level thread. 
