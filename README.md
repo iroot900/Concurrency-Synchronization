@@ -20,4 +20,4 @@ options:
 
 -t : size of matrix,deafult 5000x5000
 
-Tested on Mac Pro, single thread is actullay faster for default setting. 
+Tested on Mac Pro, single thread is actullay faster for default setting. (My understanding is that pthread is a user level thread, so many of them share the same kernel thread which actually do the work.)
