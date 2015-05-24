@@ -30,7 +30,12 @@ void* reader(void *p)
 		pthread_mutex_unlock(&llock);
 		if(article.size()>40) return NULL;
 		usleep(200);
-		// if comment out the above line, serious starving for readers
+		// if comment out the above line, serious starving for readers.. readers never release the rwlock
+		
+		// it's not that writer's can't compete with readers, it's just reader number never become 0 and 
+		// the lock is never released. so writers always on the waiting list, never wake up. As long as 
+		// the lock got releasae once a while, all the thread waiting associated with the lock will have 
+		// chance to be executed.
 	}
 }
 
