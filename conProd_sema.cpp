@@ -20,7 +20,7 @@ void* producer(void *p)
 	{
 		sem_wait(&prod);
 		sem_wait(&mmutex);
-		wines[i%10]=i+1;i++;
+		wines[i%10]=i+1;++i;
 		cout<<"Producer "<<n<<" produced wine "<<i<<endl;
 		sem_post(&mmutex);
 		sem_post(&con);
@@ -35,7 +35,7 @@ void* consumer(void *p)
 		sem_wait(&con);
 		sem_wait(&mmutex);
 		cout<<" Consumer "<<n<<" drink wine "<<wines[j%10]<<endl;
-		j++;
+		++j;
 		sem_post(&mmutex);
 		sem_post(&prod);
 	}
