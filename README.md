@@ -2,11 +2,11 @@
 
 In this repository are some classic problems/solutions regarding multi-thread, with an application on Matrix Multiplication:
 
-Reader-Writer Problem: Mutex Solution / RWLOCK Solution
+>Reader-Writer Problem: Mutex Solution / RWLOCK Solution
 
-Consumer-Producer Problem:  Semaphore Solution / Monitor Solution
+>Consumer-Producer Problem:  Semaphore Solution / Monitor Solution
 
-Deadlock illustration
+>Deadlock illustration
 
 
 
