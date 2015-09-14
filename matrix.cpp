@@ -3,7 +3,6 @@
 #include <getopt.h>
 #include <time.h>
 using namespace std;
-
 int SIZE=5000;
 int NUM=2;
 
